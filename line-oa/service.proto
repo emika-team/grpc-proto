@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option go_package = "github.com/emika-team/grpc-proto/line-oa";
+package line_oa_service;
+
+import "google/protobuf/struct.proto";
+
+service LineOAMessage {
+  rpc GetMessageContent(GetMessageContentRequest) returns (GetMessageContentResponse) {}
+  rpc SendMessage(SendMessageRequest) returns (SendMessageResponse) {}
+}
+
+message GetMessageContentRequest {
+  string messageId = 1;
+  string channelId = 2;
+}
+
+message GetMessageContentResponse {
+  string result = 1;
+}
+
+message SendMessageRequest {
+  string channelId = 1;
+  string message = 2;
+}
+
+message SendMessageResponse {
+  google.protobuf.Struct result = 1;
+}
