@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             v3.21.12
-// source: line-oa/service.proto
+// source: service.proto
 
 package line_oa
 
@@ -137,5 +137,5 @@ var LineOAMessage_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "line-oa/service.proto",
+	Metadata: "service.proto",
 }

@@ -16,14 +16,16 @@ message GetMessageContentRequest {
 }
 
 message GetMessageContentResponse {
-  string result = 1;
+  bool success = 1;
+  string result = 2;
 }
 
 message SendMessageRequest {
   string channelId = 1;
-  string message = 2;
+  string to = 2;
+  repeated google.protobuf.Struct messages = 3;
 }
 
 message SendMessageResponse {
-  google.protobuf.Struct result = 1;
+  bool success = 1;
 }
