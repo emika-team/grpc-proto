@@ -36,7 +36,7 @@ func NewLineOAMessageClient(cc grpc.ClientConnInterface) LineOAMessageClient {
 
 func (c *lineOAMessageClient) GetMessageContent(ctx context.Context, in *GetMessageContentRequest, opts ...grpc.CallOption) (*GetMessageContentResponse, error) {
 	out := new(GetMessageContentResponse)
-	err := c.cc.Invoke(ctx, "/line_oa_service.LineOAMessage/GetMessageContent", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/lineoaservice.LineOAMessage/GetMessageContent", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -45,7 +45,7 @@ func (c *lineOAMessageClient) GetMessageContent(ctx context.Context, in *GetMess
 
 func (c *lineOAMessageClient) SendMessage(ctx context.Context, in *SendMessageRequest, opts ...grpc.CallOption) (*SendMessageResponse, error) {
 	out := new(SendMessageResponse)
-	err := c.cc.Invoke(ctx, "/line_oa_service.LineOAMessage/SendMessage", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/lineoaservice.LineOAMessage/SendMessage", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -94,7 +94,7 @@ func _LineOAMessage_GetMessageContent_Handler(srv interface{}, ctx context.Conte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/line_oa_service.LineOAMessage/GetMessageContent",
+		FullMethod: "/lineoaservice.LineOAMessage/GetMessageContent",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LineOAMessageServer).GetMessageContent(ctx, req.(*GetMessageContentRequest))
@@ -112,7 +112,7 @@ func _LineOAMessage_SendMessage_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/line_oa_service.LineOAMessage/SendMessage",
+		FullMethod: "/lineoaservice.LineOAMessage/SendMessage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LineOAMessageServer).SendMessage(ctx, req.(*SendMessageRequest))
@@ -124,7 +124,7 @@ func _LineOAMessage_SendMessage_Handler(srv interface{}, ctx context.Context, de
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var LineOAMessage_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "line_oa_service.LineOAMessage",
+	ServiceName: "lineoaservice.LineOAMessage",
 	HandlerType: (*LineOAMessageServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
