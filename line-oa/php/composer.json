@@ -1,5 +1,8 @@
 {
     "name": "emikateam/phpproto",
+    "type": "library",
+    "description": "PHP Proto For Line OA",
+    "keywords": ["line oa"],
     "autoload": {
         "psr-4": {
             "Emikateam\\Phpproto\\": "src/"
@@ -11,5 +14,7 @@
             "email": "pangpond556_@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=8.0.0"
+    }
 }
