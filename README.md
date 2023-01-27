@@ -15,6 +15,6 @@ service.proto
 
 Regenerate .proto file (PHP)
 ```sh
-protoc --proto_path=line-oa   --php_out=line-oa/php   --grpc_out=line-oa/php   --plugin=protoc-gen-grpc=/home/chi2oma/protoc-21.12-linux-x86_64/bin/grpc_php_plugin   ./line-oa/service.proto
+protoc --proto_path=line-oa   --php_out=line-oa/php/src   --grpc_out=line-oa/php/src   --plugin=protoc-gen-grpc=/home/chi2oma/protoc-21.12-linux-x86_64/bin/grpc_php_plugin   ./line-oa/service.proto
 ```
 > Note: Install `--plugin=protoc-gen-grpc=bins/opt/grpc_php_plugin` : https://github.com/grpc/grpc/blob/v1.50.0/src/php/README.md
