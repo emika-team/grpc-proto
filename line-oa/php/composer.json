@@ -1,8 +1,8 @@
 {
-    "name": "emika-team/php-proto",
+    "name": "emikateam/phpproto",
     "autoload": {
         "psr-4": {
-            "EmikaTeam\\PhpProto\\": "src/"
+            "Emikateam\\Phpproto\\": "src/"
         }
     },
     "authors": [

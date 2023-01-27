@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Lineoaservice;
+namespace LineOAService;
 
 /**
  */
@@ -17,30 +17,30 @@ class LineOAMessageClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Lineoaservice\GetMessageContentRequest $argument input argument
+     * @param \LineOAService\GetMessageContentRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function GetMessageContent(\Lineoaservice\GetMessageContentRequest $argument,
+    public function GetMessageContent(\LineOAService\GetMessageContentRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/lineoaservice.LineOAMessage/GetMessageContent',
+        return $this->_simpleRequest('/lineOAService.LineOAMessage/GetMessageContent',
         $argument,
-        ['\Lineoaservice\GetMessageContentResponse', 'decode'],
+        ['\LineOAService\GetMessageContentResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Lineoaservice\SendMessageRequest $argument input argument
+     * @param \LineOAService\SendMessageRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function SendMessage(\Lineoaservice\SendMessageRequest $argument,
+    public function SendMessage(\LineOAService\SendMessageRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/lineoaservice.LineOAMessage/SendMessage',
+        return $this->_simpleRequest('/lineOAService.LineOAMessage/SendMessage',
         $argument,
-        ['\Lineoaservice\SendMessageResponse', 'decode'],
+        ['\LineOAService\SendMessageResponse', 'decode'],
         $metadata, $options);
     }
 

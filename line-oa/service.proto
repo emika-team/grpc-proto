@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option go_package = "github.com/emika-team/grpc-proto/line-oa";
-package lineoaservice;
+package lineOAService;
 
 import "google/protobuf/struct.proto";
 
