@@ -3,6 +3,7 @@
     "type": "library",
     "description": "PHP Proto For Line OA",
     "keywords": ["line oa"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Emikateam\\Phpproto\\": "src/"
