@@ -1,0 +1,15 @@
+{
+    "name": "emika-team/php-proto",
+    "autoload": {
+        "psr-4": {
+            "EmikaTeam\\PhpProto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tanapon Nanta",
+            "email": "pangpond556_@hotmail.com"
+        }
+    ],
+    "require": {}
+}
