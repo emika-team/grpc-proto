@@ -3,6 +3,8 @@ syntax = "proto3";
 option go_package = "github.com/emika-team/grpc-proto/collector";
 package collector;
 
+import "google/protobuf/timestamp.proto";
+
 service Collector {
   rpc RecordEvent (RecordEventRequest) returns (RecordEventResponse) {}
 }
@@ -11,7 +13,7 @@ message RecordEventRequest {
   string key = 1;
   string value = 2;
   string user = 3;
-  string timestamp = 4;
+  google.protobuf.Timestamp timestamp = 4;
 }
 
 message RecordEventResponse {
